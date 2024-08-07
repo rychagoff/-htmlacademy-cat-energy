@@ -1,0 +1,11 @@
+.header {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header__nav a {
+  letter-spacing: calc(14px * 0.04);
+}

@@ -3,4 +3,8 @@
   max-width: $tablet-width;
   margin: 0 auto;
   padding: 0 $padding-offset;
+
+  @include viewport-tablet {
+    max-width: $desktop-width;
+  }
 }

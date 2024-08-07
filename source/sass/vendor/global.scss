@@ -1,11 +1,14 @@
 :root {
+  --header-min-height: 100px;
   --padding-offset: 15px;
 
   @include viewport-tablet {
+    --header-min-height: 82px;
     --padding-offset: 45px;
   }
 
   @include viewport-desktop {
+    --header-min-height: 100px;
     --padding-offset: 120px;
   }
 }

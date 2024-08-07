@@ -13,45 +13,58 @@
     <link rel="preload" href="fonts/Montserrat/Montserrat-ExtraBold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/style.scss">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/svg+xml" href="img/favicons/favicon.svg">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png">
     <link rel="manifest" href="site.webmanifest">
   </head>
 
   <body class="page-body">
 
     <header class="header" data-test="header">
-      <div class="header__logo">
-        <svg width="142" height="42" role="img" aria-label="Логотип туристического агенства «Lifetour»">
-          <use href="/__spritemap#sprite-logo"></use>
-        </svg>
+      <div class="container">
+        <div class="header__inner">
+
+          <div class="header__logo">
+            <svg width="142" height="42" role="img" aria-label="Логотип туристического агенства «Lifetour»">
+              <use href="/__spritemap#sprite-logo"></use>
+            </svg>
+          </div>
+
+          <nav class="header__nav header__nav--closed">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#tours">Туры</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#training">Обучение</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#about">О нас</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#gallery">Фотографии</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#footer">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="header__toggle header__toggle--closed" type="button" aria-hidden="true">
+            <div></div>
+            <div></div>
+            <div></div>
+            <span class="visually-hidden">Кнопка показать/скрыть меню</span>
+          </button>
+
+          <a class="header__phone" href="tel:+78000000000">8 800 000-00-00</a>
+
+        </div>
       </div>
-      <nav class="header__nav header__nav--closed">
-        <ul class="header__list">
-          <li class="header__item">
-            <a class="header__link" href="#tours">Туры</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#training">Обучение</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#about">О нас</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#reviews">Отзывы</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#gallery">Фотографии</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#footer">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="header__button burger burger--closed" type="button">
-        <span class="visually-hidden">Кнопка показать/скрыть меню</span>
-      </button>
-      <a class="header__phone" href="tel:+78000000000">8 800 000-00-00</a>
     </header>
 
     <!-- пример использования спрайта -->

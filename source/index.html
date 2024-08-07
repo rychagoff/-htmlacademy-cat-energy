@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lifetour</title>
+    <title>Туристическое агенство «Lifetour»</title>
     <link rel="preload" href="fonts/Montserrat/Montserrat-Light.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
@@ -19,6 +19,36 @@
   </head>
 
   <body class="page-body">
+
+    <header class="header" data-test="header">
+      <div class="header__logo">
+        <img src="/__spritemap#logo" alt="Логотип туристического агенства «Lifetour»">
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#tours">Туры</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#training">Обучение</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#about">О нас</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#gallery">Фотографии</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#footer">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__phone" href="tel:+78000000000">8 800 000-00-00</a>
+    </header>
+
     <!-- пример использования спрайта -->
     <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт"> -->
     <!-- <svg>
@@ -26,7 +56,6 @@
     </svg> -->
 
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <!-- <div data-test="header">header</div> -->
     <!-- <div data-test="hero">hero</div> -->
     <!-- <div data-test="tours">tours</div> -->
     <!-- <div data-test="training">training</div> -->

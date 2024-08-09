@@ -8,16 +8,16 @@ function getHeight() {
   const navPositionTop = nav.offsetTop;
   const navHeight = windowHeight - navPositionTop;
 
-  nav.style.height = navHeight + 'px';
+  nav.style.height = `${navHeight }px`;
 }
 
-function removeHeight() {
-  nav.removeAttribute('style');
-}
+// function removeHeight() {
+//   nav.removeAttribute('style');
+// }
 
 function scrollReset() {
   setTimeout(() => {
-    nav.scrollTo({top: 0})
+    nav.scrollTo({top: 0});
   }, 500);
 }
 
@@ -25,7 +25,6 @@ function showMenu() {
   burger.classList.remove('header__toggle--closed');
   burger.classList.add('header__toggle--opened');
   burger.setAttribute('aria-expanded', false);
-  burger.setAttribute('aria-hidden', false);
   burger.setAttribute('aria-label', 'Закрыть меню');
 
   nav.classList.remove('header__nav--closed');
@@ -38,7 +37,6 @@ function hiddenMenu() {
   burger.classList.remove('header__toggle--opened');
   burger.classList.add('header__toggle--closed');
   burger.setAttribute('aria-expanded', true);
-  burger.setAttribute('aria-hidden', true);
   burger.setAttribute('aria-label', 'Открыть меню');
 
   nav.classList.remove('header__nav--opened');
@@ -47,9 +45,7 @@ function hiddenMenu() {
   document.body.classList.remove('no-scroll');
 }
 
-burger.addEventListener('click', (evt) => {
-  evt.preventDefault;
-
+burger.addEventListener('click', () => {
   if (burger.classList.contains('header__toggle--closed')) {
     showMenu();
     getHeight();
@@ -60,11 +56,10 @@ burger.addEventListener('click', (evt) => {
   }
 
   links.forEach((link) => {
-    link.addEventListener('click', (evt) => {
-      // evt.preventDefault;
+    link.addEventListener('click', () => {
       hiddenMenu();
       // removeHeight();
       scrollReset();
-    })
-  })
-})
+    });
+  });
+});

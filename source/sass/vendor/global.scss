@@ -1,3 +1,18 @@
+:root {
+  --header-min-height: 100px;
+  --padding-offset: 15px;
+
+  @include viewport-tablet {
+    --header-min-height: 82px;
+    --padding-offset: 45px;
+  }
+
+  @include viewport-desktop {
+    --header-min-height: 100px;
+    --padding-offset: 120px;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -21,4 +36,21 @@ img {
   max-width: 100%;
   height: auto;
   border-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
 }

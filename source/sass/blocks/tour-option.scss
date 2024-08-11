@@ -1,0 +1,23 @@
+.tour-option {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 14px 20px;
+  border: 1px solid rgba($white-color, 0.5);
+}
+
+.tour-option__icon[data-option] {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  color: $white-color;
+  background-color: $white-color;
+}
+
+.tour-option__text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: $white-color;
+}

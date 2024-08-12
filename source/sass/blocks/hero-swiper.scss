@@ -1,3 +1,13 @@
+:root {
+  --swiper-theme-color: #ffffff;
+  --swiper-pagination-bullet-size: 16px;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+  --swiper-pagination-bottom: 32px;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-inactive-color: transparent;
+}
+
 .hero-swiper__slide {
   position: relative;
   display: flex;
@@ -68,4 +78,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.hero-swiper__bullet {
+  border: 1px solid var(--swiper-theme-color);
 }

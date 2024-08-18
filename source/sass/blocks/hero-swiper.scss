@@ -6,6 +6,10 @@
   --swiper-pagination-bullet-opacity: 1;
   --swiper-pagination-bullet-inactive-opacity: 1;
   --swiper-pagination-bullet-inactive-color: transparent;
+
+  @include viewport-tablet {
+    --swiper-pagination-bullet-size: 20px;
+  }
 }
 
 .hero-swiper__slide {
@@ -13,14 +17,18 @@
   display: flex;
   align-items: center;
   max-width: $desktop-width;
-  min-height: 568px;
+  min-height: $hero-slider-height;
 }
 
 .hero-swiper__content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px $padding-offset;
+  padding: 40px $padding-offset 56px;
+
+  @include viewport-tablet {
+    padding: 242px $padding-offset 302px;
+  }
 }
 
 .hero-swiper__content h2 {
@@ -31,17 +39,30 @@
   font-weight: 800;
   color: $white-color;
   text-align: center;
+
+  @include viewport-tablet {
+    font-size: 56px;
+    line-height: 56px;
+  }
 }
 
 .hero-swiper__content > p {
+  margin-top: 15px;
   margin-bottom: 60px;
   font-size: 15px;
   line-height: 20px;
   color: $white-color;
   text-align: center;
+
+  @include viewport-tablet {
+    width: 500px;
+    margin-bottom: 35px;
+    font-size: 17px;
+    line-height: 24px;
+  }
 }
 
-.hero-swiper__button {
+.hero-swiper__link {
   width: 180px;
 }
 

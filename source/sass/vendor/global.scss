@@ -1,14 +1,17 @@
 :root {
   --header-min-height: 100px;
+  --hero-slider-min-height: 568px;
   --padding-offset: 15px;
 
   @include viewport-tablet {
     --header-min-height: 82px;
+    --hero-slider-min-height: 1034px;
     --padding-offset: 45px;
   }
 
   @include viewport-desktop {
     --header-min-height: 100px;
+    --hero-slider-min-height: 800px;
     --padding-offset: 120px;
   }
 }

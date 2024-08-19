@@ -1,9 +1,20 @@
+.tours {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+// .tours__title {
+//   margin-bottom: 25px;
+// }
+
 .tours__link {
   display: inline-block;
+  align-self: center;
   padding: 10px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+  color: $text-color;
 }

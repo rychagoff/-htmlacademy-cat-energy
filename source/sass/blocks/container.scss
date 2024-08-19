@@ -8,3 +8,9 @@
     max-width: $desktop-width;
   }
 }
+
+.container__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}

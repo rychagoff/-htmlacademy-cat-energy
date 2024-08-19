@@ -1,0 +1,35 @@
+.tour-card {
+  padding: 30px 20px;
+  color: $white-color;
+}
+
+.tour-card__image img {
+  display: block;
+}
+
+.tour-card__name {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.tour-card__details dl {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0;
+}
+
+.tour-card__details dt {
+  margin-bottom: 7px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+}
+
+.tour-card__details dd {
+  margin: 0;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+}

@@ -1,37 +1,75 @@
 :root {
   --swiper-theme-color: #ffffff;
+  --swiper-pagination-color: var(--swiper-theme-color);
+
+  // --swiper-pagination-right: auto;
+  // --swiper-pagination-left: auto;
+
+  --swiper-pagination-top: auto;
+  --swiper-pagination-bottom: 40px;
   --swiper-pagination-bullet-size: 16px;
-  --swiper-pagination-bullet-horizontal-gap: 10px;
-  --swiper-pagination-bottom: 32px;
-  --swiper-pagination-bullet-opacity: 1;
-  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-width: 16px;
+  --swiper-pagination-bullet-height: 16px;
   --swiper-pagination-bullet-inactive-color: transparent;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+
+  // --swiper-pagination-bullet-vertical-gap: 0px;
 
   @include viewport-tablet {
     --swiper-pagination-bullet-size: 20px;
+    --swiper-pagination-bullet-width: 20px;
+    --swiper-pagination-bullet-height: 20px;
+  }
+
+  @include viewport-desktop {
+    --swiper-pagination-bottom: 92px;
   }
 }
 
 .hero-swiper__slide {
   position: relative;
   display: flex;
-  align-items: center;
-  max-width: $desktop-width;
-  min-height: $hero-slider-height;
-}
-
-.hero-swiper__content {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px $padding-offset 56px;
+  justify-content: center;
+  min-height: $hero-slider-height;
 
-  @include viewport-tablet {
-    padding: 242px $padding-offset 302px;
+  @include viewport-desktop {
+    justify-content: flex-start;
   }
 }
 
-.hero-swiper__content h2 {
+.hero-swiper__content {
+  width: 100%;
+  max-width: $desktop-width;
+  margin-bottom: var(--swiper-pagination-bullet-size);
+  padding: 0 $padding-offset;
+
+  @include viewport-tablet {
+    margin-bottom: calc(var(--swiper-pagination-bullet-size) * 3);
+  }
+
+  @include viewport-desktop {
+    margin: 0;
+    padding-top: 200px;
+  }
+}
+
+.hero-swiper__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include viewport-desktop {
+    align-items: flex-start;
+    max-width: 940px;
+  }
+}
+
+.hero-swiper__text h2 {
   margin: 0;
   padding: 0;
   font-size: 26px;
@@ -44,9 +82,15 @@
     font-size: 56px;
     line-height: 56px;
   }
+
+  @include viewport-desktop {
+    font-size: 77px;
+    line-height: 77px;
+    text-align: left;
+  }
 }
 
-.hero-swiper__content > p {
+.hero-swiper__text > p {
   margin-top: 15px;
   margin-bottom: 60px;
   font-size: 15px;
@@ -59,6 +103,12 @@
     margin-bottom: 35px;
     font-size: 17px;
     line-height: 24px;
+  }
+
+  @include viewport-desktop {
+    width: 470px;
+    margin-top: 25px;
+    text-align: left;
   }
 }
 
@@ -101,6 +151,47 @@
   gap: 10px;
 }
 
-.hero-swiper__bullet {
-  border: 1px solid var(--swiper-theme-color);
+.hero-swiper__pagination {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // gap: 20px;
+  // line-height: var(--swiper-pagination-bullet-size);
+  right: 0;
+  max-width: $desktop-width;
+  height: var(--swiper-pagination-bullet-height);
+  margin: 0 auto;
+  padding: 0 $padding-offset;
+
+  @include viewport-desktop {
+    text-align: right;
+  }
 }
+
+.hero-swiper > .hero-swiper__pagination span {
+  // font-size: var(--swiper-pagination-bullet-size);
+  // line-height: var(--swiper-pagination-bullet-size);
+  border: 1px solid var(--swiper-pagination-color);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+// .hero-swiper__bullet {
+//   display: inline-block;
+//   width: var(--swiper-pagination-bullet-width);
+//   height: var(--swiper-pagination-bullet-height);
+//   margin: 0 var(--swiper-pagination-bullet-horizontal-gap);
+//   font-size: var(--swiper-pagination-bullet-size);
+//   line-height: var(--swiper-pagination-bullet-size);
+//   background-color: var(--swiper-pagination-bullet-inactive-color);
+//   border: 1px solid var(--swiper-theme-color);
+//   border-radius: 100%;
+//   opacity: var(--swiper-pagination-bullet-inactive-opacity);
+
+//   &--active {
+//     background-color: var(--swiper-pagination-color);
+//     opacity: var(--swiper-pagination-bullet-opacity);
+//   }
+// }

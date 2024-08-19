@@ -1,0 +1,38 @@
+.photo-card {
+  position: relative;
+  z-index: -1;
+  display: none;
+  width: 442px;
+  margin-top: 45px;
+
+  @include viewport-tablet {
+    display: block;
+  }
+
+  @include viewport-desktop {
+    position: absolute;
+    top: 187px;
+    right: $padding-offset;
+    width: 410px;
+    margin: 0;
+  }
+}
+
+.photo-card__image {
+  &--front {
+    position: absolute;
+    top: 93px;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  &--back {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.photo-card__image img {
+  display: block;
+}

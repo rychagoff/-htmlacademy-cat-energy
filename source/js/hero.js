@@ -9,17 +9,15 @@ const heroSwiper = new Swiper('.hero-swiper', {
     el: '.swiper-pagination',
     type: 'bullets',
     clickable: true,
-    // bulletElement: 'button type="button"',
-    bulletClass: 'swiper-pagination-bullet hero-swiper__bullet',
-    renderBullet: function (index, className) {
-      // className = 'hero-swiper__bullet';
-      return '<span class="' + className + '" role="button"></span>';
-    },
+    // bulletElement: 'button',
+    // renderBullet: function (index, className) {
+    //   return `<span class="${className}" role="button"></span>`;
+    // },
   },
   keyboard: {
-      enabled: true,
-      onlyInViewport: false,
-    },
+    enabled: true,
+    onlyInViewport: false,
+  },
   grabCursor: true,
 });
 
@@ -27,15 +25,15 @@ heroSwiper.on('init', () => {
   const hero = document.querySelector('.hero-swiper');
   const slides = hero.querySelectorAll('.swiper-slide');
 
-  console.log(hero);
-  console.log(slides);
+  // console.log(hero);
+  // console.log(slides);
 
   slides.forEach((slide) => {
     if (!slide.classList.contains('swiper-slide-active')) {
       const slideLink = slide.querySelector('.hero-swiper__link');
       slideLink.setAttribute('tabindex', -1);
     }
-  })
+  });
 });
 
 heroSwiper.init();

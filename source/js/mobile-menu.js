@@ -4,11 +4,17 @@ const nav = header.querySelector('.header__nav');
 const links = nav.querySelectorAll('.header__link');
 
 function getHeight() {
-  const windowHeight = document.body.offsetHeight;
+  const windowHeight = window.innerHeight;
+  const navHeight = nav.scrollHeight;
   const navPositionTop = nav.offsetTop;
-  const navHeight = windowHeight - navPositionTop;
 
-  nav.style.height = `${navHeight }px`;
+  const currentNavHeight = windowHeight - navPositionTop;
+
+  if (currentNavHeight < navHeight) {
+    nav.style.height = `${currentNavHeight}px`;
+  } else {
+    nav.style.height = `${navHeight}px`;
+  }
 }
 
 // function removeHeight() {

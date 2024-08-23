@@ -6,5 +6,15 @@
     font-size: 22px;
     line-height: 22px;
     font-weight: 800;
+
+    @include viewport-tablet {
+      font-size: 25px;
+      line-height: 25px;
+    }
+
+    @include viewport-desktop {
+      font-size: 35px;
+      line-height: 100px;
+    }
   }
 }

@@ -4,5 +4,34 @@
   font-size: 12px;
   line-height: 12px;
   font-weight: 500;
-  // color: $white-color;
+}
+
+.stats__item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    background-color: $white-color;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+  }
+
+  &--days::before {
+    mask-image: url("/__spritemap#sprite-sun-view");
+  }
+
+  &--nights::before {
+    width: 16px;
+    height: 16px;
+    margin-right: 14px;
+    margin-left: 2px;
+    mask-image: url("/__spritemap#sprite-moon-view");
+  }
 }

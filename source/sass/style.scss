@@ -3,6 +3,8 @@
 
 @import "swiper/css";
 @import "swiper/css/pagination";
+
+// @import "swiper/css/navigation";
 @import "vendor/mixins";
 @import "vendor/font";
 @import "vendor/normalize";
@@ -15,6 +17,7 @@
 @import "blocks/container";
 @import "blocks/button";
 @import "blocks/title";
+@import "blocks/section";
 @import "blocks/header";
 @import "blocks/hero-swiper";
 @import "blocks/tour-option";

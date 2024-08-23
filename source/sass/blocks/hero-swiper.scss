@@ -1,7 +1,4 @@
 :root {
-  --swiper-theme-color: #ffffff;
-  --swiper-pagination-color: var(--swiper-theme-color);
-
   // --swiper-pagination-right: auto;
   // --swiper-pagination-left: auto;
 
@@ -174,7 +171,9 @@
   border: 1px solid var(--swiper-pagination-color);
 
   &:last-child {
-    margin-right: 0;
+    @include viewport-desktop {
+      margin-right: 0;
+    }
   }
 }
 

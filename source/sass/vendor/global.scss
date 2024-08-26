@@ -1,6 +1,10 @@
 :root {
+  --swiper-theme-color: #ffffff;
+  --swiper-pagination-color: var(--swiper-theme-color);
+  --swiper-navigation-color: var(--swiper-theme-color);
   --header-min-height: 100px;
   --hero-slider-min-height: 568px;
+  --tours-slider-min-height: 416px;
   --padding-offset: 15px;
 
   @include viewport-tablet {

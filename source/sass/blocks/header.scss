@@ -110,7 +110,6 @@
 
 .header__link {
   position: relative;
-  display: flex;
   font-size: 14px;
   line-height: 14px;
   font-weight: 600;
@@ -170,11 +169,12 @@
   &--phone {
     top: 2px;
 
-    @include viewport-tablet {
-      top: 0;
-    }
+    // @include viewport-tablet {
+    //   top: 0;
+    // }
 
     @include viewport-desktop {
+      top: 2px;
       font-size: 18px;
       line-height: 18px;
     }
@@ -182,9 +182,12 @@
 }
 
 .header__contacts {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
   grid-area: contacts;
-  justify-self: end;
+  gap: 4px;
 }
 
 .header__toggle {

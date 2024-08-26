@@ -1,0 +1,27 @@
+.tour-geo {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: $white-color;
+  background-color: $accent-color;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    background-color: $white-color;
+    mask-image: url("/__spritemap#sprite-geo-view");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 9px 12px;
+  }
+}
+
+.tour-geo span {
+  // display: inline-block;
+}

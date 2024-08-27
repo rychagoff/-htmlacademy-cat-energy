@@ -50,7 +50,15 @@
 }
 
 .tours__title {
-  grid-area: title;
+  padding-top: 2px;
+
+  @include viewport-tablet {
+    padding-top: 10px;
+  }
+
+  @include viewport-desktop {
+    padding-top: 25px;
+  }
 }
 
 .tours__link {

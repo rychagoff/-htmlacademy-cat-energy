@@ -1,6 +1,33 @@
 .title {
+  position: relative;
   margin: 0;
   padding: 0;
+
+  &--decoration {
+    display: flex;
+    align-items: center;
+    height: 55px;
+  }
+
+  &--decoration::before {
+    content: attr(data-title);
+    position: absolute;
+    top: 0;
+    font-size: 26px;
+    line-height: 26px;
+    opacity: 0.03;
+
+    @include viewport-tablet {
+      top: 5px;
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @include viewport-desktop {
+      font-size: 55px;
+      line-height: 55px;
+    }
+  }
 
   &--md {
     font-size: 22px;
@@ -16,5 +43,11 @@
       font-size: 35px;
       line-height: 100px;
     }
+  }
+
+  &--sm {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
   }
 }

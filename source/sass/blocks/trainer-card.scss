@@ -1,0 +1,29 @@
+.trainer-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid rgba($accent-color, 0.2);
+}
+
+.trainer-card__image img {
+  display: block;
+}
+
+.trainer-card__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trainer-card__title h4 {
+  width: min-content;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.trainer-card p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+}

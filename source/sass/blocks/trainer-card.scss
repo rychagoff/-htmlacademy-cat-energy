@@ -2,12 +2,20 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 15px;
+  height: 100%;
+  padding: 14px;
+  background-color: $white-color;
   border: 1px solid rgba($accent-color, 0.2);
+}
+
+.trainer-card__image {
+  height: 200px;
 }
 
 .trainer-card__image img {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .trainer-card__title {
@@ -23,6 +31,7 @@
 }
 
 .trainer-card p {
+  max-width: 300px;
   margin: 0;
   font-size: 12px;
   line-height: 16px;

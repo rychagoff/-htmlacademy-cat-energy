@@ -18,7 +18,8 @@ const trainingSwiper = new Swiper('.training-swiper', {
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 18
+      initialSlide: 0,
+      spaceBetween: 20
     },
     1440: {
       slidesPerView: 4,

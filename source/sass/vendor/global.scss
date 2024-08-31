@@ -63,3 +63,13 @@ img {
 .no-scroll {
   overflow: hidden;
 }
+
+.custom-br {
+  @include viewport-tablet {
+    display: block;
+  }
+
+  @include viewport-desktop {
+    display: none;
+  }
+}

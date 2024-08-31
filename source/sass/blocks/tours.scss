@@ -4,11 +4,11 @@
   &::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
-    bottom: -10px;
     z-index: -1;
     width: 100%;
+    height: 595px;
     background-image:
       image-set(
         url("../../img/tours/clouds-mobile@1x.webp") type("image/webp") 1x,
@@ -23,6 +23,7 @@
 
     @include viewport-tablet {
       top: -92px;
+      height: 1630px;
       background-image:
         image-set(
           url("../../img/tours/clouds-tablet@1x.webp") type("image/webp") 1x,

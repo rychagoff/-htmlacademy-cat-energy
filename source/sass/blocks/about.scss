@@ -35,7 +35,7 @@
   object-position: -90px;
 
   @include viewport-tablet {
-    object-position: 0 -20px;
+    object-position: 0 -22px;
   }
 
   @include viewport-desktop {
@@ -47,11 +47,12 @@
   margin-bottom: 25px;
 
   @include viewport-tablet {
+    align-items: flex-end;
     margin-bottom: 36px;
+    padding-bottom: 10px;
   }
 
   @include viewport-desktop {
-    align-items: flex-end;
     height: 80px;
     margin-bottom: 57px;
   }

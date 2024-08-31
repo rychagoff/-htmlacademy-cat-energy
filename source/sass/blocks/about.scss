@@ -1,5 +1,39 @@
-.about h3 {
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__image {
+  max-height: 400px;
+}
+
+.about__image img {
+  display: block;
+  width: 100%;
+  height: revert-layer;
+  object-position: -90px;
+}
+
+.about__text h3 {
+  margin: 0;
+  margin-bottom: 15px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
+}
+
+.about__text p {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.about__title {
+  margin-bottom: 25px;
+}
+
+.about__history {
+  margin-bottom: 25px;
 }

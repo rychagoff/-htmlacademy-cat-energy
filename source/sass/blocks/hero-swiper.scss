@@ -91,7 +91,6 @@
   margin-top: 15px;
   margin-bottom: 60px;
   font-size: 15px;
-  line-height: 20px;
   color: $white-color;
   text-align: center;
 
@@ -168,7 +167,7 @@
 .hero-swiper > .hero-swiper__pagination span {
   // font-size: var(--swiper-pagination-bullet-size);
   // line-height: var(--swiper-pagination-bullet-size);
-  border: 1px solid var(--swiper-pagination-color);
+  border: 1px solid $swiper-theme-color;
 
   &:last-child {
     @include viewport-desktop {

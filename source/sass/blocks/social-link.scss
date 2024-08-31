@@ -1,0 +1,10 @@
+.social-link {
+  &--trainer {
+    display: inline-flex;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    border: 1px solid rgba($text-color, 0.3);
+  }
+}

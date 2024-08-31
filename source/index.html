@@ -212,8 +212,8 @@
           <div class="container__inner">
 
             <div class="section__slider">
-              <h2 class="tours__title section__title title title--md" data-title="Ближайшие туры">Ближайшие туры</h2>
-              <div class="swiper tours-swiper">
+              <h2 class="tours__title section__title title title--md title--decoration" data-title="Ближайшие туры">Ближайшие туры</h2>
+              <div class="section__swiper swiper tours-swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <article class="tours-swiper__slide tour-card">
@@ -421,13 +421,13 @@
                   </div>
                 </div>
               </div>
-              <div class="tours-swiper__navigation">
-                <button class="tours-swiper__button tours-swiper__button--prev" type="button">
+              <div class="section-swiper__navigation tours-swiper__navigation">
+                <button class="section-swiper__button section-swiper__button--prev" type="button">
                   <svg>
                     <use href="/__spritemap#sprite-slider-arrow"></use>
                   </svg>
                 </button>
-                <button class="tours-swiper__button tours-swiper__button--next" type="button">
+                <button class="section-swiper__button section-swiper__button--next" type="button">
                   <svg>
                     <use href="/__spritemap#sprite-slider-arrow"></use>
                   </svg>
@@ -435,6 +435,188 @@
               </div>
             </div>
             <a class="tours__link" href="#">Показать все туры</a>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="training section" data-test="training">
+        <div class="container">
+          <div class="container__inner">
+
+            <div class="training__header">
+              <h2 class="training__title title title--md title--decoration" data-title="Обучение">Обучение</h2>
+              <p>Обучение проводится квалифицированными специалистами,<span class="custom-br"></span> за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+            </div>
+            <div class="training__slider section__slider">
+              <h3 class="section__title title title--md">Наши инструкторы</h3>
+              <div class="section__swiper swiper training-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide training-swiper__slide">
+                    <article class="training-swiper__slide trainer-card">
+                      <div class="trainer-card__image">
+                        <picture>
+                          <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/training/prokofiev@1x.webp 1x, img/training/prokofiev@2x.webp 2x" width="255" height="200">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/training/prokofiev@1x.webp 1x, img/training/prokofiev@2x.webp 2x" width="182" height="200"> -->
+                          <source type="image/webp" srcset="img/training/prokofiev@1x.webp 1x, img/training/prokofiev@2x.webp 2x" width="260" height="200">
+
+                          <!-- <source type="image/jpg" media="(min-width: 1440px)" srcset="img/training/prokofiev@1x.jpg 1x, img/training/prokofiev@2x.jpg 2x" width="255" height="200">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/training/prokofiev@1x.jpg 1x, img/training/prokofiev@2x.jpg 2x" width="182" height="200"> -->
+                          <img src="img/training/prokofiev@1x.jpg" srcset="img/training/prokofiev@2x.jpg 2x" width="260" height="200" alt="Портрет инструктора" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="trainer-card__title">
+                        <h4>Александр Прокофьев</h4>
+                        <a class="social-link social-link--vk social-link--trainer" href="#">
+                          <svg width="14" height="8">
+                            <use href="/__spritemap#sprite-vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="training-swiper__slide trainer-card">
+                      <div class="trainer-card__image">
+                        <picture>
+                          <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/training/afinogenova@1x.webp 1x, img/training/afinogenova@2x.webp 2x" width="255" height="200">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/training/afinogenova@1x.webp 1x, img/training/afinogenova@2x.webp 2x" width="182" height="200"> -->
+                          <source type="image/webp" srcset="img/training/afinogenova@1x.webp 1x, img/training/afinogenova@2x.webp 2x" width="260" height="200">
+
+                          <!-- <source type="image/jpg" media="(min-width: 1440px)" srcset="img/training/afinogenova@1x.webp 1x, img/training/afinogenova@2x.webp 2x" width="255" height="200">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/training/afinogenova@1x.webp 1x, img/training/afinogenova@2x.webp 2x" width="182" height="200"> -->
+                          <img src="img/training/afinogenova@1x.jpg" srcset="img/training/afinogenova@2x.jpg 2x" width="260" height="200" alt="Портрет инструктора" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="trainer-card__title">
+                        <h4>Светлана Афиногенова</h4>
+                        <a class="social-link social-link--vk social-link--trainer" href="#">
+                          <svg width="14" height="8">
+                            <use href="/__spritemap#sprite-vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="training-swiper__slide trainer-card">
+                      <div class="trainer-card__image">
+                        <picture>
+                          <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/training/kolesnichenko@1x.webp 1x, img/training/kolesnichenko@2x.webp 2x" width="255" height="200">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/training/kolesnichenko@1x.webp 1x, img/training/kolesnichenko@2x.webp 2x" width="182" height="200"> -->
+                          <source type="image/webp" srcset="img/training/kolesnichenko@1x.webp 1x, img/training/kolesnichenko@2x.webp 2x" width="260" height="200">
+
+                          <!-- <source type="image/jpg" media="(min-width: 1440px)" srcset="img/training/kolesnichenko@1x.jpg 1x, img/training/kolesnichenko@2x.jpg 2x" width="255" height="200">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/training/kolesnichenko@1x.jpg 1x, img/training/kolesnichenko@2x.jpg 2x" width="182" height="200"> -->
+                          <img src="img/training/kolesnichenko@1x.jpg" srcset="img/training/kolesnichenko@2x.jpg 2x" width="260" height="200" alt="Портрет инструктора" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="trainer-card__title">
+                        <h4>Надежда Колесниченко</h4>
+                        <a class="social-link social-link--vk social-link--trainer" href="#">
+                          <svg width="14" height="8">
+                            <use href="/__spritemap#sprite-vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="training-swiper__slide trainer-card">
+                      <div class="trainer-card__image">
+                        <picture>
+                          <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/training/kaigorodov@1x.webp 1x, img/training/kaigorodov@2x.webp 2x" width="255" height="200">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/training/kaigorodov@1x.webp 1x, img/training/kaigorodov@2x.webp 2x" width="182" height="200"> -->
+                          <source type="image/webp" srcset="img/training/kaigorodov@1x.webp 1x, img/training/kaigorodov@2x.webp 2x" width="260" height="200">
+
+                          <!-- <source type="image/jpg" media="(min-width: 1440px)" srcset="img/training/kaigorodov@1x.jpg 1x, img/training/kaigorodov@2x.jpg 2x" width="255" height="200">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/training/kaigorodov@1x.jpg 1x, img/training/kaigorodov@2x.jpg 2x" width="182" height="200"> -->
+                          <img src="img/training/kaigorodov@1x.jpg" srcset="img/training/kaigorodov@2x.jpg 2x" width="260" height="200" alt="Портрет инструктора" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="trainer-card__title">
+                        <h4>Федор Кайгородов</h4>
+                        <a class="social-link social-link--vk social-link--trainer" href="#">
+                          <svg width="14" height="8">
+                            <use href="/__spritemap#sprite-vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                    </article>
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="training-swiper__slide trainer-card">
+                      <div class="trainer-card__image">
+                        <picture>
+                          <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/training/vasnecov@1x.webp 1x, img/training/vasnecov@2x.webp 2x" width="255" height="200">
+                          <source type="image/webp" media="(min-width: 768px)" srcset="img/training/vasnecov@1x.webp 1x, img/training/vasnecov@2x.webp 2x" width="182" height="200"> -->
+                          <source type="image/webp" srcset="img/training/vasnecov@1x.webp 1x, img/training/vasnecov@2x.webp 2x" width="260" height="200">
+
+                          <!-- <source type="image/jpg" media="(min-width: 1440px)" srcset="img/training/vasnecov@1x.jpg 1x, img/training/vasnecov@2x.jpg 2x" width="255" height="200">
+                          <source type="image/jpg" media="(min-width: 768px)" srcset="img/training/vasnecov@1x.jpg 1x, img/training/vasnecov@2x.jpg 2x" width="182" height="200"> -->
+                          <img src="img/training/vasnecov@1x.jpg" srcset="img/training/vasnecov@2x.jpg 2x" width="260" height="200" alt="Портрет инструктора" loading="lazy">
+                        </picture>
+                      </div>
+                      <div class="trainer-card__title">
+                        <h4>Даниэль Васнецов</h4>
+                        <a class="social-link social-link--vk social-link--trainer" href="#">
+                          <svg width="14" height="8">
+                            <use href="/__spritemap#sprite-vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-swiper__navigation training-swiper__navigation">
+                <button class="section-swiper__button section-swiper__button--prev" type="button">
+                  <svg>
+                    <use href="/__spritemap#sprite-slider-arrow"></use>
+                  </svg>
+                </button>
+                <button class="section-swiper__button section-swiper__button--next" type="button">
+                  <svg>
+                    <use href="/__spritemap#sprite-slider-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="training__process process">
+              <h3 class="process__title title title--sm">Процесс обучения</h3>
+              <ul class="process__list">
+                <li class="process__item process__item--map">
+                  <svg width="25" height="25">
+                    <use href="/__spritemap#sprite-map"></use>
+                  </svg>
+                  <p>Изучение спортивного туристского движения</p>
+                </li>
+                <li class="process__item process__item--boots">
+                  <svg width="25" height="25">
+                    <use href="/__spritemap#sprite-boots"></use>
+                  </svg>
+                  <p>Подготовка и техническое снаряжение в походах</p>
+                </li>
+                <li class="process__item process__item--trees">
+                  <svg width="25" height="25">
+                    <use href="/__spritemap#sprite-trees"></use>
+                  </svg>
+                  <p>Лекции по окружающей<span class="custom-br"></span> среде, экологии и гигиене</p>
+                </li>
+                <li class="process__item process__item--mountains">
+                  <svg width="25" height="25">
+                    <use href="/__spritemap#sprite-mountains"></use>
+                  </svg>
+                  <p>Разъяснение сложности горных препятствий</p>
+                </li>
+              </ul>
+            </div>
 
           </div>
         </div>
@@ -448,7 +630,6 @@
     </svg> -->
 
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <!-- <div data-test="training">training</div> -->
     <!-- <div data-test="about">about</div> -->
     <!-- <div data-test="reviews">reviews</div> -->
     <!-- <div data-test="adv">adv</div> -->

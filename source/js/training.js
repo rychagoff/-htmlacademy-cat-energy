@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
-const toursSwiper = new Swiper('.tours-swiper', {
+const trainingSwiper = new Swiper('.training-swiper', {
   init: false,
   modules: [ Navigation ],
   navigation: {
@@ -13,15 +13,17 @@ const toursSwiper = new Swiper('.tours-swiper', {
   spaceBetween: 15,
   breakpoints: {
     320: {
-      slidesPerView: 1
+      slidesPerView: 1,
+      initialSlide: 2
     },
     768: {
-      slidesPerView: 2,
-      spaceBetween: 18
+      slidesPerView: 3,
+      initialSlide: 0,
+      spaceBetween: 20
     },
     1440: {
-      slidesPerView: 3,
-      spaceBetween: 30
+      slidesPerView: 4,
+      spaceBetween: 20
     }
   },
   keyboard: {
@@ -31,4 +33,4 @@ const toursSwiper = new Swiper('.tours-swiper', {
   grabCursor: true,
 });
 
-toursSwiper.init();
+trainingSwiper.init();

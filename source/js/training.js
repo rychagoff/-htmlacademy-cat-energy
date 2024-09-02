@@ -5,9 +5,9 @@ const trainingSwiper = new Swiper('.training-swiper', {
   init: false,
   modules: [ Navigation ],
   navigation: {
-    nextEl: '.section-swiper__button--next',
-    prevEl: '.section-swiper__button--prev',
-    disabledClass: 'section-swiper__button--disabled'
+    nextEl: '.training-navigation .section__swiper-button--next',
+    prevEl: '.training-navigation .section__swiper-button--prev',
+    disabledClass: 'section__swiper-button--disabled'
   },
   slidesPerView: 1,
   spaceBetween: 15,

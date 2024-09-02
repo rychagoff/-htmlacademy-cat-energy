@@ -5,9 +5,9 @@ const toursSwiper = new Swiper('.tours-swiper', {
   init: false,
   modules: [ Navigation ],
   navigation: {
-    nextEl: '.section-swiper__button--next',
-    prevEl: '.section-swiper__button--prev',
-    disabledClass: 'section-swiper__button--disabled'
+    nextEl: '.tours-navigation .section__swiper-button--next',
+    prevEl: '.tours-navigation .section__swiper-button--prev',
+    disabledClass: 'section__swiper-button--disabled'
   },
   slidesPerView: 1,
   spaceBetween: 15,

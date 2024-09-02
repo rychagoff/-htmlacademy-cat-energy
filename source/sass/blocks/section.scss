@@ -50,7 +50,7 @@
   }
 }
 
-.section-swiper__navigation {
+.section__swiper-navigation {
   display: none;
   grid-template-columns: repeat(2, 1fr);
   align-items: end;
@@ -62,7 +62,7 @@
   }
 }
 
-.section-swiper__button {
+.section__swiper-button {
   width: 37px;
   height: 35px;
   padding: 0;
@@ -81,7 +81,7 @@
   }
 }
 
-.section-swiper__button svg {
-  width: 14px;
-  height: inherit;
-}
+// .section__swiper-button svg {
+//   width: 14px;
+//   height: inherit;
+// }

@@ -60,4 +60,15 @@
       line-height: 21px;
     }
   }
+
+  &--xs {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+
+    @include viewport-tablet {
+      font-size: 13px;
+      line-height: 13px;
+    }
+  }
 }

@@ -1,0 +1,15 @@
+.reviews__swiper {
+  overflow: visible;
+}
+
+.reviews__slide {
+  box-shadow: 0 0 20px rgba($active-color, 0.1);
+
+  @include viewport-tablet {
+    max-width: 565px;
+  }
+
+  @include viewport-desktop {
+    max-width: 700px;
+  }
+}

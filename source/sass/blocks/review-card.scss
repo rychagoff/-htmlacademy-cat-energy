@@ -3,11 +3,16 @@
   flex-direction: column;
   gap: 20px;
   padding: 20px;
+  background-color: $white-color;
 
   @include viewport-tablet {
     flex-direction: row;
     align-items: center;
     gap: 30px;
+  }
+
+  @include viewport-desktop {
+    align-items: flex-start;
   }
 }
 

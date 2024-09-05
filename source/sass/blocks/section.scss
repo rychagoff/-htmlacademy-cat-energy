@@ -38,6 +38,11 @@
   &--tours {
     gap: 25px;
     margin-bottom: 25px;
+
+    @include viewport-tablet {
+      gap: 53px;
+      margin-bottom: 53px;
+    }
   }
 
   &--training {
@@ -54,6 +59,14 @@
 
   &--reviews {
     gap: 15px;
+
+    @include viewport-tablet {
+      gap: 25px;
+    }
+
+    @include viewport-desktop {
+      gap: 28px;
+    }
   }
 }
 

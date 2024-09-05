@@ -2,6 +2,7 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
 const reviewsSwiper = new Swiper('.reviews__swiper', {
+  autoHeight: true,
   modules: [ Navigation ],
   navigation: {
     nextEl: '.reviews__navigation .section__swiper-button--next',

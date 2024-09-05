@@ -19,18 +19,41 @@
   grid-template-areas:
     "title"
     "slider";
-  gap: 15px;
+
+  // gap: 15px;
 
   @include viewport-tablet {
     grid-template-columns: 1fr 78px;
     grid-template-areas:
       "title  navigation"
       "slider slider";
-    gap: 25px;
+
+    // gap: 25px;
   }
 
   @include viewport-desktop {
-    gap: 53px;
+    // gap: 53px;
+  }
+
+  &--tours {
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  &--training {
+    gap: 25px;
+
+    @include viewport-tablet {
+      gap: 30px;
+    }
+
+    @include viewport-desktop {
+      gap: 20px;
+    }
+  }
+
+  &--reviews {
+    gap: 15px;
   }
 }
 

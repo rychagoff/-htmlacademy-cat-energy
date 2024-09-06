@@ -7,3 +7,4 @@ import './mobile-menu';
 import './hero';
 import './tours';
 import './training';
+import './reviews';

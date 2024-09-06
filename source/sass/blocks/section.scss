@@ -13,56 +13,85 @@
   }
 }
 
-// .section__header {
-//   height: 55px;
-// }
-
 .section__slider {
   display: grid;
-  gap: 25px;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "title"
+    "slider";
+
+  // gap: 15px;
 
   @include viewport-tablet {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 78px;
     grid-template-areas:
       "title  navigation"
       "slider slider";
+
+    // gap: 25px;
   }
 
   @include viewport-desktop {
-    gap: 53px;
+    // gap: 53px;
+  }
+
+  &--tours {
+    gap: 25px;
+    margin-bottom: 25px;
+
+    @include viewport-tablet {
+      gap: 53px;
+      margin-bottom: 53px;
+    }
+  }
+
+  &--training {
+    gap: 25px;
+
+    @include viewport-tablet {
+      gap: 30px;
+    }
+
+    @include viewport-desktop {
+      gap: 20px;
+    }
+  }
+
+  &--reviews {
+    gap: 15px;
+
+    @include viewport-tablet {
+      gap: 25px;
+    }
+
+    @include viewport-desktop {
+      gap: 28px;
+    }
   }
 }
 
 .section__title {
-  @include viewport-tablet {
-    display: flex;
-    align-items: center;
-    grid-area: title;
-  }
+  grid-area: title;
 }
 
 .section__swiper {
+  grid-area: slider;
   width: 100%;
-
-  @include viewport-tablet {
-    display: grid;
-    grid-area: slider;
-  }
 }
 
-.section-swiper__navigation {
+.section__navigation {
   display: none;
+  grid-area: navigation;
   grid-template-columns: repeat(2, 1fr);
   align-items: end;
   column-gap: 4px;
 
   @include viewport-tablet {
     display: grid;
-    grid-area: navigation;
   }
 }
 
-.section-swiper__button {
+.section__swiper-button {
   width: 37px;
   height: 35px;
   padding: 0;
@@ -79,9 +108,4 @@
     background-color: $disabled-color;
     cursor: unset;
   }
-}
-
-.section-swiper__button svg {
-  width: 14px;
-  height: inherit;
 }
